@@ -1,0 +1,23 @@
+.box img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template: repeat(5, 50fr) / repeat(2, 49fr);
+    gap: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+  }
+  .box-three {
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+}
